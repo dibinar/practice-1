@@ -1,0 +1,154 @@
+/* Игра в города */
+#field{
+    width: 400px;
+    height: 100px;
+    font-size: 20px;
+  }
+  
+  #checklist, #ckList {
+      display: inline-block;
+    width: 400px;
+    font-size: 16px;
+  }
+  
+  #ckList {
+      padding: 0;
+      list-style-type: none;
+  }
+  
+  #ckList li{
+    font-size: 18px;
+    padding: 5px 0px;
+  }
+  
+  #ckList span {
+      margin-right: 5px;
+  }
+  
+  #ckList .remove, #list .mark {
+      color: blue;
+      cursor: pointer;
+  }
+  
+  #ckList .remove:hover, #list .mark:hover {
+      text-decoration: underline;
+  }
+  
+  .done {
+      text-decoration: line-through;
+  }
+  
+  /* Записная книжка */
+  #wrapper {
+      width: 500px;
+      margin: 0 auto;
+      position: relative;
+  }
+  #menu {
+      width: 150px;
+      position: absolute;
+      right: 105%;
+  }
+  #notes {
+      padding: 0;
+      margin: 0;
+  }
+  #notes li {
+    display: flex;
+    justify-content: space-between;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 1px dashed gray;
+      list-style-type: none;
+      cursor: pointer;
+  }
+  
+  #notes li:hover ,#notes li:hover span, #notes li.active, #notes li.active span{
+      background-color: #acaaaa;
+  }
+  #create button {
+      width: 100%;
+      padding: 5px;
+  }
+  
+  #text textarea {
+      width: 100%;
+      height: 400px;
+      box-sizing: border-box;
+      padding: 10px;
+      margin-bottom: 10px;
+  }
+  #text button {
+      width: 100%;
+      height: 30px;
+  }
+  
+  /* Калькулятор продуктов */
+  #calculator {
+      margin: 0 auto;
+      width: 500px;
+  }
+  
+  #form {
+      display: flex;
+      margin-bottom: 15px;
+  }
+  #form input {
+      padding: 8px;
+      width: 24%;
+      margin: 0 0.5% 10px 0.5%;
+  }
+  
+  h2 {
+      margin-top: 0;
+      margin-bottom: 7px;
+  }
+  
+  #tableProducts {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+  #tableProducts td, #tableProducts th {
+      padding: 8px;
+      text-align: center;
+      border: 1px solid black;
+  }
+  #tableProducts td.remove {
+      color: blue;
+      cursor: pointer;
+      text-decoration: underline;
+  }
+  #tableProducts td.remove:hover {
+      text-decoration: none;
+  }
+  
+  #result {
+      text-align: right;
+      margin-right: 10px;
+  }
+  
+  /* Тесты */
+  .right {
+      border: 1px solid green;
+    background-color: green;
+  }
+  .wrong {
+    border: 1px solid red;
+    background-color: red;
+  }
+  
+  .testBtn{
+    margin-top: 20px;
+  
+    width: 100px;
+    height: 30px;
+  }
+  
+  #testBtn2{
+    padding: 5px;
+  }
+  
+  /* Слайдеры */
+  #slider{
+    font-size: 30px;
+  }
